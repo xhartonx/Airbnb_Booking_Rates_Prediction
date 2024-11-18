@@ -93,9 +93,10 @@ The dataset includes features such as property characteristics, host details, an
 ## Insights
 
 1. **Amenities Clustering**: Listings with Cluster 2 amenities are most popular.
-2. **Proximity Analysis**: Listings farther from airports tend to have lower booking rates.
-3. **Price Sensitivity**: Higher prices correlate with lower booking rates.
-4. **Host Features**: Superhost status and responsiveness significantly influence booking rates.
+   <img width="80%" alt="image" src="images/cluster.png">
+3. **Proximity Analysis**: Listings farther from airports tend to have lower booking rates.
+4. **Price Sensitivity**: Higher prices correlate with lower booking rates.
+5. **Host Features**: Superhost status and responsiveness significantly influence booking rates.
 
 ---
 
