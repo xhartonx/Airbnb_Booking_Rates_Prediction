@@ -10,8 +10,8 @@ This repository contains the final project for **BUDT 758T**, completed in Sprin
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Methodology](#methodology)
+- [Exploratory Data Analysis](#Exploatory-Data-Analysis)
 - [Models and Results](#models-and-results)
-- [Insights](#insights)
 - [Reflection](#reflection)
 - [How to Run](#how-to-run)
 - [Contributions](#contributions)
@@ -77,6 +77,24 @@ The dataset includes features such as property characteristics, host details, an
 
 ---
 
+## Exploratory Data Analysis
+1. **Amenities Clustering**: Listings with Cluster 2 amenities are most popular.
+<img width="700" alt="cluster" src="https://github.com/user-attachments/assets/858211a4-37a4-4310-aa0a-23041981ac67">
+
+2. **Proximity Analysis**: Listings farther from airports tend to have lower booking rates.
+<img width="650" alt="violin" src="https://github.com/user-attachments/assets/16ee8f93-1ca6-47d4-8f07-aa8a6029c5e5">
+
+3. **Price Sensitivity**: Higher prices correlate with lower booking rates.
+<img width="650" alt="scatter 90" src="https://github.com/user-attachments/assets/105405d9-3d1e-4e38-83b8-c281139cf32a">
+
+4. **Host Features**: Superhost status and responsiveness significantly influence booking rates.
+<img width="600" alt="scatter plot" src="https://github.com/user-attachments/assets/4f518c9e-1e43-4ee3-ba0f-a9004f0261cc">
+
+5. **Positive Scores**: The lack of correlation between prices and high positive scores suggests that customers are not necessarily attributing value or quality to higher-priced listings when assigning positive ratings.
+<img width="600" alt="positive score" src="https://github.com/user-attachments/assets/f26bf99d-f888-4470-950c-1d9660cbf895">
+
+---
+
 ## Models and Results
 
 ### Training and Generalization Performance
@@ -106,7 +124,6 @@ The dataset includes features such as property characteristics, host details, an
 2. Lasso model
 <img width="502" alt="Lasso" src="https://github.com/user-attachments/assets/e5195cc7-1e7d-4b41-b151-1300f773eba0">
 
-
 - ROC Curve
 
 1. Logistic Regression Model
@@ -115,27 +132,17 @@ The dataset includes features such as property characteristics, host details, an
 2. Random Forest Model
 <img width="447" alt="random forest ROC" src="https://github.com/user-attachments/assets/75859c68-e978-428c-b1c2-2fdcafbf991c">
 
+3. Ridge Model
+<img width="447" alt="Ridge ROC" src="https://github.com/user-attachments/assets/42d4927a-58ab-4cb1-a283-6c5ddd974411">
 
+4. Lasso Model
+<img width="447" alt="Lasso ROC" src="https://github.com/user-attachments/assets/53a048d0-cea2-44ee-9a8f-1964bbca9b08">
 
+5. XGboost Model
+<img width="447" alt="XGboost ROC" src="https://github.com/user-attachments/assets/060b9d0f-0eb2-4501-a697-96cae4c88e7f">
 
----
-
-## Insights
-
-1. **Amenities Clustering**: Listings with Cluster 2 amenities are most popular.
-<img width="700" alt="cluster" src="https://github.com/user-attachments/assets/858211a4-37a4-4310-aa0a-23041981ac67">
-
-2. **Proximity Analysis**: Listings farther from airports tend to have lower booking rates.
-<img width="650" alt="violin" src="https://github.com/user-attachments/assets/16ee8f93-1ca6-47d4-8f07-aa8a6029c5e5">
-
-3. **Price Sensitivity**: Higher prices correlate with lower booking rates.
-<img width="650" alt="scatter 90" src="https://github.com/user-attachments/assets/105405d9-3d1e-4e38-83b8-c281139cf32a">
-
-4. **Host Features**: Superhost status and responsiveness significantly influence booking rates.
-<img width="600" alt="scatter plot" src="https://github.com/user-attachments/assets/4f518c9e-1e43-4ee3-ba0f-a9004f0261cc">
-
-5. **Positive Scores**: The lack of correlation between prices and high positive scores suggests that customers are not necessarily attributing value or quality to higher-priced listings when assigning positive ratings.
-<img width="600" alt="positive score" src="https://github.com/user-attachments/assets/f26bf99d-f888-4470-950c-1d9660cbf895">
+6. Boosting Model
+<img width="447" alt="Boosting ROC" src="https://github.com/user-attachments/assets/21e04868-f4dd-4cdc-a157-bfc452164442">
 
 ---
 
