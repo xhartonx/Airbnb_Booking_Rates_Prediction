@@ -79,6 +79,9 @@ The dataset includes features such as property characteristics, host details, an
 
 ## Models and Results
 
+### Training and Generalization Performance
+- Our team created 6 models, including Logistic, Ridge, Lasso, XGBoost, Boosting, and Random Forest. Discussing splitting the data in detail, we separated into training, testing, and validation data. Then we took the training data to train our model and predict our model on the validation data to get the AUC value. After running all the models, we plotted the models’ AUC curves on the same plot and chose the top 3 winning models with the best AUC then trained the whole data to receive the models’ probability. Finally, we averaged these models’ probability for the final prediction.
+
 | Model              | AUC   | Description                                           |
 |--------------------|-------|-------------------------------------------------------|
 | Logistic Regression| 0.84  | Baseline model for comparison.                       |
@@ -88,15 +91,51 @@ The dataset includes features such as property characteristics, host details, an
 | XGBoost            | 0.88  | Gradient boosting for accurate predictions.          |
 | Boosting           | 0.88  | Improved performance with boosting techniques.       |
 
+- AUC for 6 models
+<img width="534" alt="AUC" src="https://github.com/user-attachments/assets/aa42ae5b-735a-4616-bb7f-08ff11625849">
+
+
+- The plot below uses the random forest to generate a features importance chart and see which variables are more important to the model in two aspects, giving us some insight.
+<img width="530" alt="feature importance" src="https://github.com/user-attachments/assets/bc1af31b-d048-4dbe-9b11-1bd569e8dcd2">
+
+- Ridge & Lasso model
+
+1. Ridge model
+<img width="502" alt="Ridge" src="https://github.com/user-attachments/assets/bc9d2280-e3f0-4183-baf5-5b291b20fa47">
+
+2. Lasso model
+<img width="502" alt="Lasso" src="https://github.com/user-attachments/assets/e5195cc7-1e7d-4b41-b151-1300f773eba0">
+
+
+- ROC Curve
+
+1. Logistic Regression Model
+<img width="449" alt="Logistic ROC" src="https://github.com/user-attachments/assets/8c37b7a9-72f6-4f19-845a-d56edc1fe448">
+
+2. Random Forest Model
+<img width="447" alt="random forest ROC" src="https://github.com/user-attachments/assets/75859c68-e978-428c-b1c2-2fdcafbf991c">
+
+
+
+
 ---
 
 ## Insights
 
 1. **Amenities Clustering**: Listings with Cluster 2 amenities are most popular.
-   <img width="80%" alt="image" src="images/cluster.png">
-3. **Proximity Analysis**: Listings farther from airports tend to have lower booking rates.
-4. **Price Sensitivity**: Higher prices correlate with lower booking rates.
-5. **Host Features**: Superhost status and responsiveness significantly influence booking rates.
+<img width="700" alt="cluster" src="https://github.com/user-attachments/assets/858211a4-37a4-4310-aa0a-23041981ac67">
+
+2. **Proximity Analysis**: Listings farther from airports tend to have lower booking rates.
+<img width="650" alt="violin" src="https://github.com/user-attachments/assets/16ee8f93-1ca6-47d4-8f07-aa8a6029c5e5">
+
+3. **Price Sensitivity**: Higher prices correlate with lower booking rates.
+<img width="650" alt="scatter 90" src="https://github.com/user-attachments/assets/105405d9-3d1e-4e38-83b8-c281139cf32a">
+
+4. **Host Features**: Superhost status and responsiveness significantly influence booking rates.
+<img width="600" alt="scatter plot" src="https://github.com/user-attachments/assets/4f518c9e-1e43-4ee3-ba0f-a9004f0261cc">
+
+5. **Positive Scores**: The lack of correlation between prices and high positive scores suggests that customers are not necessarily attributing value or quality to higher-priced listings when assigning positive ratings.
+<img width="600" alt="positive score" src="https://github.com/user-attachments/assets/f26bf99d-f888-4470-950c-1d9660cbf895">
 
 ---
 
