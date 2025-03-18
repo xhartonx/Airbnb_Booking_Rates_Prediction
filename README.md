@@ -6,7 +6,6 @@ The goal of this project was to develop a predictive model to identify factors i
 
 ## Table of Contents
 
-- [Team Members](#team-members)
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Methodology](#methodology)
@@ -16,17 +15,7 @@ The goal of this project was to develop a predictive model to identify factors i
 - [How to Run](#how-to-run)
 - [Contributions](#contributions)
 - [License](#license)
-
----
-
-## Team Members
-
-- **Yiting Lai**: Team Lead, Data Cleaning, Feature Engineering, Modeling, EDA, Text Mining, R Code Organization
-- **Ching Yu Ting**: Data Cleaning, Feature Engineering, Modeling
-- **Cheng-Feng Lin**: Data Cleaning, Feature Engineering, Modeling
-- **Kelan Quan**: Feature Engineering, Text Mining
-- **I-Chia Yeh**: Data Cleaning, Feature Engineering, Text Mining, EDA
-
+- 
 ---
 
 ## Project Overview
