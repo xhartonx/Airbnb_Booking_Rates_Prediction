@@ -15,7 +15,7 @@ The goal of this project was to develop a predictive model to identify factors i
 - [How to Run](#how-to-run)
 - [Contributions](#contributions)
 - [License](#license)
-- 
+
 ---
 
 ## Project Overview
