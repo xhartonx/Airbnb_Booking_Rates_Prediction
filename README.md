@@ -1,6 +1,6 @@
 # Airbnb Booking Rate Prediction Project
 
-This repository contains the final project for **BUDT 758T**, completed in Spring 2024. The goal of this project was to develop a predictive model to identify factors influencing high booking rates on Airbnb properties and provide actionable insights for Airbnb hosts and stakeholders.
+The goal of this project was to develop a predictive model to identify factors influencing high booking rates on Airbnb properties and provide actionable insights for Airbnb hosts and stakeholders.
 
 ---
 
