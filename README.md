@@ -12,9 +12,6 @@ The goal of this project was to develop a predictive model to identify factors i
 - [Exploratory Data Analysis](#Exploatory-Data-Analysis)
 - [Models and Results](#models-and-results)
 - [Reflection](#reflection)
-- [How to Run](#how-to-run)
-- [Contributions](#contributions)
-- [License](#license)
 
 ---
 
@@ -148,11 +145,3 @@ The dataset includes features such as property characteristics, host details, an
 ### Future Work
 - Prioritize text mining earlier in the process.
 - Assign weights to features for improved modeling.
-
----
-
-## How to Run
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/airbnb-booking-prediction.git
