@@ -17,7 +17,8 @@ The goal of this project was to develop a predictive model to identify factors i
 
 ## Project Overview
 
-The hospitality industry is highly competitive, and optimizing Airbnb listings is crucial for hosts to maximize bookings. This project aimed to predict high booking rates by analyzing various factors, including property attributes, host characteristics, and guest feedback.
+The hospitality industry is highly competitive, and hosts must optimize their Airbnb listings to boost bookings. The purpose of the project was to predict high booking rates on the basis of numerous factors, such as property attributes, host characteristics, and guest feedback.
+
 
 ### Target Audience
 - Airbnb Hosts
@@ -28,9 +29,9 @@ The hospitality industry is highly competitive, and optimizing Airbnb listings i
 ### Value Proposition
 - **Granular Insights**: Understand key factors affecting booking success.
 - **Optimized Pricing**: Tailored strategies for competitive pricing.
-- **Guest Experience Enhancement**: Improve amenities and services based on data-driven insights.
-- **Location Selection**: Identify profitable markets for expansion.
-
+- **Guest Experience Enhancement**: Enhance amenities and services according to insights obtained from data.
+- **Location Selection**: Identify profitable markets to expand into.
+  
 ---
 
 ## Dataset
@@ -58,13 +59,13 @@ The dataset includes features such as property characteristics, host details, an
    - AUC for the best model: **0.88**.
 
 4. **Insights**
-   - Text mining highlighted impactful keywords for optimizing property descriptions.
+   - Text mining highlighted impactful keywords for improving property descriptions.
    - Proximity to airports and popular attractions significantly influences booking rates.
 
 ---
 
 ## Exploratory Data Analysis
-1. **Amenities Clustering**: Listings with Cluster 2 amenities are most popular.
+1. **Amenities Clustering**: We clustered amenities into 10 groups to assess their impact on availability. Listings with Cluster 2 amenities tend to have higher bookings across most markets, while Seattle hosts favor Cluster 7 for better occupancy
 <img width="700" alt="cluster" src="https://github.com/user-attachments/assets/858211a4-37a4-4310-aa0a-23041981ac67">
 
 2. **Proximity Analysis**: Listings farther from airports tend to have lower booking rates.
@@ -73,10 +74,10 @@ The dataset includes features such as property characteristics, host details, an
 3. **Price Sensitivity**: Higher prices correlate with lower booking rates.
 <img width="650" alt="scatter 90" src="https://github.com/user-attachments/assets/105405d9-3d1e-4e38-83b8-c281139cf32a">
 
-4. **Host Features**: Superhost status and responsiveness significantly influence booking rates.
+4. **Host Features**: Newer hosts usually have higher positive scores. This might be because they offer better amenities or put more effort into managing their properties.
 <img width="600" alt="scatter plot" src="https://github.com/user-attachments/assets/4f518c9e-1e43-4ee3-ba0f-a9004f0261cc">
 
-5. **Positive Scores**: The lack of correlation between prices and high positive scores suggests that customers are not necessarily attributing value or quality to higher-priced listings when assigning positive ratings.
+5. **Positive Scores**: That high positive ratings and prices do not align means that customers may not view higher prices as greater quality or value when they give positive ratings.
 <img width="600" alt="positive score" src="https://github.com/user-attachments/assets/f26bf99d-f888-4470-950c-1d9660cbf895">
 
 ---
@@ -84,8 +85,9 @@ The dataset includes features such as property characteristics, host details, an
 ## Models and Results
 
 ### Training and Generalization Performance
-- Our team created 6 models, including Logistic, Ridge, Lasso, XGBoost, Boosting, and Random Forest. Discussing splitting the data in detail, we separated into training, testing, and validation data. Then we took the training data to train our model and predict our model on the validation data to get the AUC value. After running all the models, we plotted the models’ AUC curves on the same plot and chose the top 3 winning models with the best AUC then trained the whole data to receive the models’ probability. Finally, we averaged these models’ probability for the final prediction.
+Our team created 6 models, including Logistic, Ridge, Lasso, XGBoost, Boosting, and Random Forest. Discussing splitting the data in detail, we separated into training, testing, and validation data. Then we took the training data to train our model and predict our model on the validation data to get the AUC value. After running all the models, we plotted the models’ AUC curves on the same plot and chose the top 3 winning models with the best AUC then trained the whole data to receive the models’ probability. Finally, we averaged these models’ probability for the final prediction.
 
+### **Model Performance Summary**
 | Model              | AUC   | Description                                           |
 |--------------------|-------|-------------------------------------------------------|
 | Logistic Regression| 0.84  | Baseline model for comparison.                       |
@@ -95,23 +97,24 @@ The dataset includes features such as property characteristics, host details, an
 | XGBoost            | 0.88  | Gradient boosting for accurate predictions.          |
 | Boosting           | 0.88  | Improved performance with boosting techniques.       |
 
-- AUC for 6 models
+### **AUC Comparison Across Models**
+The plot below visualizes the AUC performance of all six models.
+
 <img width="534" alt="AUC" src="https://github.com/user-attachments/assets/aa42ae5b-735a-4616-bb7f-08ff11625849">
 
+### **Feature Importance (Random Forest Model)**
+The plot below uses the random forest to generate a features importance chart and see which variables are more important to the model in two aspects, giving us some insight.
 
-- The plot below uses the random forest to generate a features importance chart and see which variables are more important to the model in two aspects, giving us some insight.
 <img width="530" alt="feature importance" src="https://github.com/user-attachments/assets/bc1af31b-d048-4dbe-9b11-1bd569e8dcd2">
 
-- Ridge & Lasso model
-
+### **Regularized Regression: Ridge & Lasso Models**
 1. Ridge model
 <img width="502" alt="Ridge" src="https://github.com/user-attachments/assets/bc9d2280-e3f0-4183-baf5-5b291b20fa47">
 
 2. Lasso model
 <img width="502" alt="Lasso" src="https://github.com/user-attachments/assets/e5195cc7-1e7d-4b41-b151-1300f773eba0">
 
-- ROC Curve
-
+### **ROC Curves for Model Evaluation**
 1. Logistic Regression Model
 <img width="449" alt="Logistic ROC" src="https://github.com/user-attachments/assets/8c37b7a9-72f6-4f19-845a-d56edc1fe448">
 
@@ -132,16 +135,7 @@ The dataset includes features such as property characteristics, host details, an
 
 ---
 
-## Reflection
-
-### Strengths
-- Effective collaboration with clear communication.
-- Comprehensive modeling and feature engineering.
-
-### Challenges
-- Handling messy and high-dimensional data.
-- Balancing model complexity with interpretability.
-
-### Future Work
-- Prioritize text mining earlier in the process.
-- Assign weights to features for improved modeling.
+## Lessons Learned & Future Enhancements
+- More refined text mining could improve model accuracy—removing less relevant words and refining sentiment analysis.
+- Feature weighting techniques (assigning different importance to features) could enhance prediction performance.
+- Deeper analysis of market-specific trends would help customize insights for different cities and property types.
