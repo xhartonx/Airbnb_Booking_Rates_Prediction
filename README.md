@@ -9,9 +9,9 @@ The goal of this project was to develop a predictive model to identify factors i
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Methodology](#methodology)
-- [Exploratory Data Analysis](#exploatory-data-analysis)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Models and Results](#models-and-results)
-- [Lessons Learned & Future Enhancements](#lessons-learned-future-enhancements)
+- [Lessons Learned and Future Enhancements](#lessons-learned-and-future-enhancements)
 
 ---
 
@@ -135,7 +135,7 @@ The plot below uses the random forest to generate a features importance chart an
 
 ---
 
-## Lessons Learned & Future Enhancements
+## Lessons Learned and Future Enhancements
 - Further improved text mining would enhance model accuracy—eliminating less useful words and refining sentiment analysis.
 - Feature weighting techniques (assigning different importance to features) could enhance prediction performance.
 - More in-depth analysis of market-specific trends would help customize insights for different cities and property types.
