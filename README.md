@@ -11,7 +11,7 @@ The goal of this project was to develop a predictive model to identify factors i
 - [Methodology](#methodology)
 - [Exploratory Data Analysis](#Exploatory-Data-Analysis)
 - [Models and Results](#models-and-results)
-- [Lessons Learned & Future Enhancements](#Lessons-Learned-&-Future-Enhancements)
+- [Lessons Learned & Future Enhancements](#lessons-learned-future-enhancements)
 
 ---
 
