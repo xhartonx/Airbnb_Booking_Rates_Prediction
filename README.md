@@ -9,7 +9,7 @@ The goal of this project was to develop a predictive model to identify factors i
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Methodology](#methodology)
-- [Exploratory Data Analysis](#Exploatory-Data-Analysis)
+- [Exploratory Data Analysis](#exploatory-data-analysis)
 - [Models and Results](#models-and-results)
 - [Lessons Learned & Future Enhancements](#lessons-learned-future-enhancements)
 
